@@ -18,12 +18,12 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Screenshot
 
-![](./image/FM-2407-qr-code-component-main.jpeg)
+![](./images/FM-2407-qr-code-component-main.jpeg)
 
 ### Links
 
 - Solution URL: [QR code component](https://github.com/Cinquantesix/FM-2407-qr-code-component-main)
-- Live Site URL: [QR code component](https://cinquantesix.github.io/projects/FM-2407-qr-code-component-main/index.html)
+- Live Site URL: [QR code component](https://main--fm-2407-qr-code-component-main.netlify.app/)
 
 ## My process
 
