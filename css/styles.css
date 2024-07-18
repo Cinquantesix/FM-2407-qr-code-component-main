@@ -32,17 +32,8 @@ img, svg {
 	max-width: 100%;
 }
 
-p, h1, h3 {
+p, h1 {
  	overflow-wrap: break-word;
-}
-
-h1 {
-	position: absolute;
-	color: transparent;
-	opacity: 0;
-	line-height: 0;
-	width: 0;
-	height: 0;
 }
 
 .card {
@@ -52,11 +43,11 @@ h1 {
 	box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.05);
 }
 
-figure {
+.card figure {
 	max-width: 288px;
 }
 
-img {
+.card img {
 	box-sizing: border-box;
 	width: 100%;
 	background: 
@@ -68,13 +59,13 @@ img {
 }
 
 @media (max-width: 360px) {
-	img {
+	.card img {
 		padding: 2rem;
 	}
 }
 
 @media (max-width: 480px) {
-	img {
+	.card img {
 		background: 
 		radial-gradient(circle 328px  at 60px top, #2C7DFA 43% , transparent 43%),
 		radial-gradient(circle 270px at 280px 330px, #2C7DFA 50% , transparent 50%),
@@ -83,7 +74,7 @@ img {
 
 }
 
-h3, p {
+.card h1, .card p {
 	font-family: "Outfit", sans-serif;
 	font-optical-sizing: auto;
 	font-weight: 400;
@@ -94,7 +85,7 @@ h3, p {
 	margin-top: 1rem; 
 }
 
-h3 {
+.card h1 {
 	color:var(--Dark-Navy);
 	font-weight: 700;
 	font-size: 1.375rem;
@@ -102,7 +93,7 @@ h3 {
 	margin-top: 1.5rem;
 }
 
-p {
+.card p {
 	color:var(--Grey);
 	margin-inline: 1rem;
 }
