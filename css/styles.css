@@ -6,22 +6,38 @@
 }
 
 * {
+	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
 
 body {
 	background-color: var(--light-Grey);
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
 }
 
 main {
 	width: 100%;
-	height: 100vh;
-	height: 100svh;
+	min-height: 100svh;
+	padding: 1.5rem;
 	
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+img, svg {
+	display: block;
+	max-width: 100%;
+}
+
+p, h1, h3 {
+ 	overflow-wrap: break-word;
+}
+
+h1 {
+	display: none;
 }
 
 .card {
@@ -32,18 +48,24 @@ main {
 }
 
 figure {
-	width: 288px;
+	max-width: 288px;
 }
 
 img {
+	box-sizing: border-box;
+	width: 100%;
 	background: 
 	radial-gradient(circle 328px  at 60px top, #3685FF 43% , transparent 43%),
 	radial-gradient(circle 270px at 280px 330px, #3685FF 50% , transparent 50%),
 	#2C7DFA;
 	border-radius: 10px;
 	padding: 4rem;
-	width: 160px;
-	height: 160px;
+}
+
+@media (max-width: 360px) {
+	img {
+		padding: 2rem;
+	}
 }
 
 @media (max-width: 480px) {
@@ -56,20 +78,22 @@ img {
 
 }
 
-h1, p {
+h3, p {
 	font-family: "Outfit", sans-serif;
 	font-optical-sizing: auto;
 	font-weight: 400;
 	font-style: normal;
-	font-size: 15px;
+	font-size: 0.9375rem;
+	font-size: clamp(0.9375rem, 0.9375rem + 0vw, 0.9375rem);
 	text-align: center;
 	margin-top: 1rem; 
 }
 
-h1 {
+h3 {
 	color:var(--Dark-Navy);
 	font-weight: 700;
-	font-size: 22px;
+	font-size: 1.375rem;
+	font-size: clamp(1.375rem, 1.375rem + 0vw, 1.375rem);
 	margin-top: 1.5rem;
 }
 
@@ -77,6 +101,8 @@ p {
 	color:var(--Grey);
 	margin-inline: 1rem;
 }
+
+/* ----- attribution ----- */
 
 .attribution {
 	font-size: 11px;
@@ -86,6 +112,7 @@ p {
 	left: 50%;
 	transform: translate(-50%, 0);
 	font-family: "Outfit", sans-serif;
+	z-index: -1;
 }
 
 .attribution a { 
